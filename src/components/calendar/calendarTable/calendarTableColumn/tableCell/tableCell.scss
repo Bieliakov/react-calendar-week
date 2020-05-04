@@ -1,0 +1,29 @@
+@import "../../../../../common/styles/constants";
+
+
+
+.tableCell {
+    border-right: $border-thin-dark;
+    border-bottom: $border-thin-dark;
+    box-sizing: border-box;
+
+    &.isSelected {
+        border-bottom: none;
+        background-color: #61dafb;
+
+        &.isLowestSelected {
+            border-bottom: $border-thin-dark;
+        }
+    }
+
+}
+
+.isFirstColumn {
+    border-left: $border-thin-dark;
+}
+
+.isFirstRow {
+    border-top: $border-thin-dark;
+}
+
+

@@ -1,0 +1,20 @@
+
+.calendar {
+    margin: 20px 0;
+}
+
+.calendarTable{
+    display: flex;
+    overflow-y: scroll;
+    height: 500px;
+
+    &--time {
+        display: inline-block;
+    }
+
+    &--table {
+        display: inline-block;
+    }
+}
+
+

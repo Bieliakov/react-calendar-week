@@ -1,0 +1,36 @@
+@import "../../../common/styles/constants";
+
+
+
+
+.userSearch {
+  position: relative;
+  margin-bottom: 20px;
+
+  &--input {
+    outline: 1px solid lightgrey;
+    display: block;
+  }
+
+  &--select {
+    position: absolute;
+    top: 100%;
+    left: 0;
+    width: 159px;
+    background-color: white;
+
+    &__option {
+      border: $border-thin-grey;
+      width: 100%;
+    }
+  }
+
+  &--label {
+    display: block;
+    margin-bottom: 5px;
+  }
+
+  &--searchRow {
+    position: relative;
+  }
+}

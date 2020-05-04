@@ -3,10 +3,16 @@ import ReactDOM from 'react-dom';
 import './index.css';
 import App from './App';
 import * as serviceWorker from './serviceWorker';
+import { EventDataProvider } from './context/EventDataProvider';
+import { EventsDataProvider } from './context/EventsDataProvider';
 
 ReactDOM.render(
   <React.StrictMode>
-    <App />
+	  <EventsDataProvider>
+	    <EventDataProvider>
+	      <App />
+	    </EventDataProvider>
+	  </EventsDataProvider>
   </React.StrictMode>,
   document.getElementById('root')
 );

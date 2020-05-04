@@ -1,0 +1,20 @@
+.calendarTable--column{
+  position: relative;
+  display: inline-block;
+  height: 100%;
+
+  &__event {
+    overflow: hidden;
+    height: 100%;
+    width: 100%;
+
+    &Container {
+      position:absolute;
+      z-index: 10;
+      border-radius: 5px;
+      border: 1px solid blue;
+      box-sizing: border-box;
+      background-color: #9fd39f;
+    }
+  }
+}
